@@ -8,7 +8,7 @@ Version:	4.9.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Science
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	ff50aa491f4f334e80a958e126e548a1
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
@@ -38,18 +38,17 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
 
-%find_lang %{orgname} --with-kde
+#find_lang %{orgname} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{orgname}.lang
+#%files -f %{orgname}.lang
+%files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/pairs
 %{_datadir}/apps/pairs
-%{_datadir}/config.kcfg/pairs.kcfg
 %{_datadir}/config/pairs.knsrc
 %{_desktopdir}/kde4/pairs.desktop
 %{_iconsdir}/hicolor/scalable/apps/pairs.svgz
 %{_iconsdir}/hicolor/*x*/apps/pairs.png
-%{_mandir}/man6/pairs.6*
