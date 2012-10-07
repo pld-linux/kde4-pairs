@@ -2,7 +2,7 @@
 %define		orgname		pairs
 
 Summary:	K Desktop Environment - A game to enhance your memory
-Summary(pl_PL.UTF8):	K Desktop Environment - Gra rozwijająca pamięć
+Summary(pl.UTF-8):	K Desktop Environment - Gra rozwijająca pamięć
 Name:		kde4-pairs
 Version:	4.9.1
 Release:	1
