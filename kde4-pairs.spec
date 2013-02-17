@@ -38,17 +38,21 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
 
-#find_lang %{orgname} --with-kde
+%find_lang %{orgname} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-#%files -f %{orgname}.lang
-%files
+%files -f %{orgname}.lang
+#files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/pairs
+%attr(755,root,root) %{_bindir}/pairseditor
 %{_datadir}/apps/pairs
+%{_datadir}/apps/pairseditor
 %{_datadir}/config/pairs.knsrc
 %{_desktopdir}/kde4/pairs.desktop
+%{_desktopdir}/kde4/pairseditor.desktop
 %{_iconsdir}/hicolor/scalable/apps/pairs.svgz
 %{_iconsdir}/hicolor/*x*/apps/pairs.png
+%{_iconsdir}/hicolor/*x*/apps/pairseditor.png
