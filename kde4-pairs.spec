@@ -54,5 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/kde4/pairs.desktop
 %{_desktopdir}/kde4/pairseditor.desktop
 %{_iconsdir}/hicolor/scalable/apps/pairs.svgz
+%{_iconsdir}/hicolor/scalable/apps/pairseditor.svgz
 %{_iconsdir}/hicolor/*x*/apps/pairs.png
 %{_iconsdir}/hicolor/*x*/apps/pairseditor.png
