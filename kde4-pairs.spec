@@ -4,12 +4,12 @@
 Summary:	K Desktop Environment - A game to enhance your memory
 Summary(pl.UTF-8):	K Desktop Environment - Gra rozwijająca pamięć
 Name:		kde4-pairs
-Version:	4.14.0
+Version:	4.14.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Science
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	aa7485565da6fbe186bd84d50b9555f1
+# Source0-md5:	b325f36b3865001f384979a875546b7b
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	kde4-libkdeedu-devel >= %{version}
